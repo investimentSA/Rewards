@@ -85,12 +85,12 @@
             text-align: center;
         }
         .instructions {
-            background: #333; /* Fondo oscuro para mejor visibilidad */
-            color: #fff; /* Color blanco para el texto */
+            background: #fff; /* Fondo blanco para las instrucciones */
+            color: #000; /* Texto negro */
             padding: 20px 30px;
             margin: 20px auto;
             max-width: 800px;
-            text-align: left;
+            text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
@@ -101,6 +101,18 @@
         }
         .instructions ol {
             padding-left: 20px;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+        .instructions ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+        .timer {
+            font-size: 1.5rem;
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -113,7 +125,14 @@
         <a href="https://eradictrkr.com/pauldev" class="cta-button">Start Now</a>
     </div>
 </div>
-    <!-- New Instructions Section with Emojis -->
+
+<div class="info-section">
+    <h2>🎁 Why Join?</h2>
+    <p>No hidden fees, no complicated steps—just simple tasks with real rewards. Today’s task is worth $50, and we’ll send you similar offers daily to help you reach $1,200 this month.</p>
+    <p><strong>Start now, and secure your first $50 in just minutes!</strong></p>
+</div>
+
+<!-- New Instructions Section with Emojis -->
 <div class="instructions">
     <h2>📋 How to Complete the Offer</h2>
     <ol>
@@ -127,17 +146,41 @@
         <li>Ensure all steps are completed as instructed—partial submissions may not qualify. ⚠️</li>
         <li>Once finished, you’ll automatically be redirected to a secure page where you can claim your $50. 🎉</li>
     </ol>
-    <h2>🎁 Why Join?</h2>
-    <p>No hidden fees, no complicated steps—just simple tasks with real rewards. Today’s task is worth $50, and we’ll send you similar offers daily to help you reach $1,200 this month.</p>
-
-    <p><strong>Start now, and secure your first $50 in just minutes!</strong></p>
+    <div class="timer" id="timer">⏰ Hurry! Limited time offer – 15 minutes left!</div>
 </div>
 
 <footer>
     © 2024 EarnEasyRewards. All rights reserved.
 </footer>
 
+<script>
+    // Timer countdown (15 minutes)
+    var countdownDate = new Date().getTime() + 15 * 60 * 1000; // 15 minutes from now
+    var timer = document.getElementById("timer");
+
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countdownDate - now;
+
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        timer.innerHTML = "⏰ Hurry! Limited time offer – " + minutes + "m " + seconds + "s left!";
+
+        if (distance < 0) {
+            clearInterval(x);
+            timer.innerHTML = "Offer Expired!";
+        }
+    }, 1000);
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
 
 
