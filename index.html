@@ -107,10 +107,22 @@
             margin-bottom: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .testimonial img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
         }
         .testimonial p {
             font-size: 1.1rem;
             margin: 0;
+            flex: 1;
+        }
+        .testimonial .stars {
+            color: #ffd700;
         }
         .instructions {
             background: #fff;
@@ -134,6 +146,28 @@
         .instructions ul {
             padding-left: 20px;
             text-align: left;
+        }
+        .company-section {
+            background: #f8f9fa;
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .company-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .company-section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .company-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
         .guarantee-section {
             background: #f8f9fa;
@@ -169,6 +203,26 @@
             height: auto;
             border-radius: 0; /* Mantener la imagen en proporciones naturales */
         }
+        .payment-methods {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .payment-methods h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .payment-methods p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .payment-methods img {
+            width: 80px;
+            height: 80px;
+            margin: 0 15px;
+        }
     </style>
 </head>
 <body>
@@ -184,22 +238,45 @@
 <!-- Floating CTA button -->
 <a href="https://eradictrkr.com/pauldev" class="cta-button-floating">Claim Your $50 Now!</a>
 
+<!-- Payment Methods Section (New) -->
+<div class="payment-methods">
+    <h2>Certified and Sponsored by Trusted Payment Methods</h2>
+    <p>We work with the most reliable payment methods to ensure you receive your earnings safely and quickly. Our partners include:</p>
+    <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888870.png" alt="PayPal">
+        <img src="https://play-lh.googleusercontent.com/3HYud1cjMaEnaqoaC2lHr-6uMoFJPd0S4gJi0o_9lf7ClbtLS84hb5kcfTHv797--_bS" alt="Payeer">
+    </div>
+</div>
+
 <div class="info-section">
     <h2>🎁 Why Join?</h2>
     <p>No hidden fees, no complicated steps—just simple tasks with real rewards. Today’s task is worth $50, and we’ll send you similar offers daily to help you reach $1,200 this month.</p>
-    <p><strong>Start now, and secure your first $50 in just minutes!</strong></p>
-    
-    <!-- Testimonials -->
-    <h3>What Our Users Say</h3>
-    <div class="testimonials">
-        <div class="testimonial">
-            <p>"I earned my first $50 within minutes! The task was easy and fun. Totally worth it!" – <strong>Sarah M.</strong></p>
+    <p>Get started now by clicking the button below and begin earning!</p>
+    <a href="https://eradictrkr.com/pauldev" class="cta-button">Start Earning Now</a>
+</div>
+
+<!-- Testimonials Section -->
+<div class="testimonials">
+    <h2>Real Testimonials from Our Users</h2>
+    <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sarah M.">
+        <div>
+            <p>"I started with this offer and earned $50 immediately! It's so easy and fast. Highly recommend!" – <strong>Sarah M.</strong></p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
         </div>
-        <div class="testimonial">
-            <p>"I’ve been using this service for a few weeks, and now I’m making extra cash every day!" – <strong>John R.</strong></p>
+    </div>
+    <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John R.">
+        <div>
+            <p>"The task was straightforward and I received my $50 without any hassle. Great platform!" – <strong>John R.</strong></p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
         </div>
-        <div class="testimonial">
-            <p>"It’s simple to use, and the payouts are real. Don’t hesitate, start earning now!" – <strong>Linda B.</strong></p>
+    </div>
+    <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Linda B.">
+        <div>
+            <p>"This was the easiest way to make money online! I'll keep coming back for more offers!" – <strong>Linda B.</strong></p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
         </div>
     </div>
 </div>
@@ -220,6 +297,13 @@
     </ol>
 </div>
 
+<!-- Company Section -->
+<div class="company-section">
+    <h2>Why Choose Us?</h2>
+    <p>We are a transparent and reliable company that always puts our customers first. We are committed to excellence, and our work speaks for itself. Our mission is to ensure you get the best rewards for your time, without any hidden fees or complications.</p>
+    <img src="https://d5tnfl9agh5vb.cloudfront.net/uploads/2019/01/upn_blog_epec_empresas-y-empresarios_15-ene.jpg" alt="Business Meeting">
+</div>
+
 <!-- Guarantee Section -->
 <div class="guarantee-section">
     <h3>100% Satisfaction Guarantee</h3>
@@ -235,10 +319,6 @@
 
 </body>
 </html>
-
-
-
-
 
 
 
