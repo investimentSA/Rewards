@@ -1,50 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51HGPD2RKP"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-51HGPD2RKP');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Earn $50 Today – Complete easy tasks and get paid instantly! No hidden fees. Start now and earn fast!">
-    <meta name="keywords" content="earn money, easy tasks, work from home, earn online, make money, fast payout">
-    <title>Earn $50 Today – Easy Task!</title>
+    <meta name="description" content="Complete a simple task and earn $50 instantly! Limited time offer!">
+    <meta name="keywords" content="earn money online, easy rewards, quick payouts, CPA offers">
+    <meta name="author" content="YourName">
+    <title>💸 Earn $50 Now – Limited Time Offer!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background: #1a1a1a;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background: #f8f9fa;
         }
         .hero {
-            background-image: url('https://www.decoraoficina.es/wp-content/uploads/2019/09/oficina-en-casa.jpg');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?money,success') no-repeat center center/cover;
+            color: white;
             text-align: center;
-            padding: 20px;
+            padding: 50px 20px;
+            position: relative;
         }
-        .hero::after {
-            content: '';
+        .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
         }
         .hero-content {
             position: relative;
@@ -52,261 +36,103 @@
         }
         .hero h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
         }
         .cta-button {
             background: #28a745;
-            color: #fff;
+            color: white;
             padding: 15px 30px;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             border-radius: 5px;
-            text-transform: uppercase;
             text-decoration: none;
-            transition: background 0.3s;
+            display: inline-block;
+            margin-top: 20px;
         }
         .cta-button:hover {
             background: #218838;
         }
-        .info-section {
-            background: #f8f9fa;
-            color: #333;
-            padding: 30px 20px;
+        .instructions, .testimonials, .steps {
+            padding: 40px 20px;
             text-align: center;
         }
-        .info-section h2 {
+        .instructions h2, .testimonials h2, .steps h2 {
             margin-bottom: 20px;
         }
-        .info-section p {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        .testimonials {
-            margin-top: 20px;
+        .steps ol {
             text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
         }
         .testimonial {
-            background: #fff;
-            color: #000;
+            background: white;
             padding: 15px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
             border-radius: 8px;
-            display: flex;
-            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .testimonial img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             margin-right: 15px;
         }
-        .testimonial p {
-            font-size: 1.1rem;
-            margin: 0;
-            flex: 1;
-        }
-        .testimonial .stars {
-            color: #ffd700;
-        }
-        .instructions {
-            background: #fff;
-            color: #000;
-            padding: 20px 30px;
-            margin: 20px auto;
-            max-width: 800px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .instructions h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-        .instructions ol {
-            padding-left: 20px;
+        .testimonial-content {
             text-align: left;
-            font-size: 1.1rem;
-        }
-        .instructions ul {
-            padding-left: 20px;
-            text-align: left;
-        }
-        .company-section {
-            background: #f8f9fa;
-            padding: 40px;
-            text-align: center;
-            margin-top: 30px;
-        }
-        .company-section h2 {
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .company-section p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        .company-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .guarantee-section {
-            background: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            margin-top: 30px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-        .guarantee-section h3 {
-            font-size: 1.5rem;
-            color: #28a745;
-        }
-        .guarantee-section p {
-            font-size: 1.1rem;
-            color: #333;
+            display: flex;
+            align-items: center;
         }
         footer {
-            background: #000;
-            color: #777;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .footer-links a {
-            color: #bbb;
-            text-decoration: none;
-        }
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 0; /* Mantener la imagen en proporciones naturales */
-        }
-        .payment-methods {
             background: #333;
-            color: #fff;
+            color: white;
             padding: 20px;
             text-align: center;
-            margin-top: 30px;
-        }
-        .payment-methods h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-        .payment-methods p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-        .payment-methods img {
-            width: 80px;
-            height: 80px;
-            margin: 0 15px;
         }
     </style>
 </head>
 <body>
 
 <div class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-        <h1>🚀 Earn $50 Today – Complete This Simple Task! 💸</h1>
-        <p>Your opportunity to earn $1,200/month starts here. Complete this quick and easy task to get paid instantly!</p>
-        <a href="#why-join" class="cta-button">Start Now</a>
+        <h1>💸 Earn $50 Now!</h1>
+        <p>Complete a quick task and get rewarded instantly. No hassle, no waiting!</p>
+        <a href="https://your-cpa-link.com" class="cta-button">Claim Your $50 Now</a>
     </div>
 </div>
 
-<!-- Payment Methods Section -->
-<div class="payment-methods">
-    <h2>Certified and Sponsored by Trusted Payment Methods</h2>
-    <p>We work with the most reliable payment methods to ensure you receive your earnings safely and quickly. Our partners include:</p>
-    <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/888/888870.png" alt="PayPal">
-        <img src="https://play-lh.googleusercontent.com/3HYud1cjMaEnaqoaC2lHr-6uMoFJPd0S4gJi0o_9lf7ClbtLS84hb5kcfTHv797--_bS" alt="Payeer">
-    </div>
-</div>
-
-<div id="why-join" class="info-section">
-    <h2>🎁 Why Join?</h2>
-    <p>No hidden fees, no complicated steps—just simple tasks with real rewards. Today’s task is worth $50, and we’ll send you similar offers daily to help you reach $1,200 this month.</p>
-    <p>Get started now by clicking the button below and begin earning!</p>
-    <a href="#instructions" class="cta-button">How It Works</a>
-</div>
-
-<!-- Testimonials Section -->
-<div class="testimonials">
-    <h2>Real Testimonials from Our Users</h2>
-    <div class="testimonial">
-        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sarah M.">
-        <div>
-            <p>"I started with this offer and earned $50 immediately! It's so easy and fast. Highly recommend!" – <strong>Sarah M.</strong></p>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-        </div>
-    </div>
-    <div class="testimonial">
-        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John R.">
-        <div>
-            <p>"The task was straightforward and I received my $50 without any hassle. Great platform!" – <strong>John R.</strong></p>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-        </div>
-    </div>
-    <div class="testimonial">
-        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Linda B.">
-        <div>
-            <p>"This was the easiest way to make money online! I'll keep coming back for more offers!" – <strong>Linda B.</strong></p>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-        </div>
-    </div>
-</div>
-
-<!-- Instructions Section -->
-<div id="instructions" class="instructions">
-    <h2>📋 How to Complete the Offer</h2>
+<div class="steps">
+    <h2>📋 How It Works</h2>
     <ol>
-        <li><strong>Click the green button above</strong> to access the offer page. ✅</li>
-        <li>Carefully follow the instructions on the offer page. This might include: 📑</li>
-        <ul>
-            <li>Filling out a quick registration form. 📝</li>
-            <li>Completing a short survey. 📊</li>
-            <li>Downloading and installing a free app or browser. 📲</li>
-        </ul>
-        <li>Ensure all steps are completed as instructed—partial submissions may not qualify. ⚠️</li>
-        <li>Once finished, you’ll automatically be redirected to a secure page where you can claim your $50. 🎉</li>
+        <li>Click the button above to access the offer.</li>
+        <li>Follow the simple instructions (e.g., complete a survey or download an app).</li>
+        <li>Receive your $50 directly to your PayPal or bank account.</li>
     </ol>
-    <a href="https://eradictrkr.com/pauldev" class="cta-button">Claim Your $50 Now!</a>
 </div>
 
-<!-- Company Section -->
-<div class="company-section">
-    <h2>Why Choose Us?</h2>
-    <p>We are a transparent and reliable company that always puts our customers first. We are committed to excellence, and our work speaks for itself. Our mission is to ensure you get the best rewards for your time, without any hidden fees or complications.</p>
-    <img src="https://d5tnfl9agh5vb.cloudfront.net/uploads/2019/01/upn_blog_epec_empresas-y-empresarios_15-ene.jpg" alt="Business Meeting">
+<div class="testimonials">
+    <h2>What Others Are Saying</h2>
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User 1">
+            <p>"This was so easy! I earned my first $50 in minutes!" – <strong>Anna K.</strong></p>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User 2">
+            <p>"A great way to make money fast. Highly recommend!" – <strong>John D.</strong></p>
+        </div>
+    </div>
 </div>
 
-<!-- Guarantee Section -->
-<div class="guarantee-section">
-    <h3>100% Satisfaction Guarantee</h3>
-    <p>We promise your tasks will always be simple, and your payouts will always be fast.</p>
+<div class="instructions">
+    <h2>⚡ Act Fast!</h2>
+    <p>Limited spots available. Don’t miss out on this opportunity to earn $50 today!</p>
+    <a href="https://your-cpa-link.com" class="cta-button">Start Earning Now</a>
 </div>
 
 <footer>
-    <p>© 2024 EarnEasyRewards. All rights reserved.</p>
-    <div class="footer-links">
-        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-    </div>
+    <p>© 2024 FastCash Rewards. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
