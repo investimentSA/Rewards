@@ -16,27 +16,26 @@
             background: #f8f9fa;
         }
         .hero {
-            position: relative;
-            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?money,success') no-repeat center center/cover;
             color: white;
+            text-align: center;
             padding: 50px 20px;
+            position: relative;
         }
-        .hero img {
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            object-fit: cover;
-            filter: brightness(60%);
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
         }
         .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
             z-index: 2;
         }
         .hero h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
         }
         .cta-button {
             background: #28a745;
@@ -46,15 +45,16 @@
             border-radius: 5px;
             text-decoration: none;
             display: inline-block;
+            margin-top: 20px;
         }
         .cta-button:hover {
             background: #218838;
         }
-        .steps, .testimonials, .instructions {
+        .instructions, .testimonials, .steps {
             padding: 40px 20px;
             text-align: center;
         }
-        .steps h2, .testimonials h2, .instructions h2 {
+        .instructions h2, .testimonials h2, .steps h2 {
             margin-bottom: 20px;
         }
         .steps ol {
@@ -90,17 +90,15 @@
 </head>
 <body>
 
-<!-- Hero Section with Image -->
 <div class="hero">
-    <img src="https://www.lavanguardia.com/andro4all/hero/2021/10/Las-mejores-8-webs-para-hacer-encuestas-online-y-ganar-dinero.jpg?width=1200" alt="Earn Money Now">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1>💸 Earn $50 Now!</h1>
         <p>Complete a quick task and get rewarded instantly. No hassle, no waiting!</p>
-        <a href="https://eradictrkr.com/pauldev" class="cta-button">Claim Your $50 Now</a>
+        <a href="https://superfolder.net/pauldev" class="cta-button">Claim Your $50 Now</a>
     </div>
 </div>
 
-<!-- Steps Section -->
 <div class="steps">
     <h2>📋 How It Works</h2>
     <ol>
@@ -110,7 +108,6 @@
     </ol>
 </div>
 
-<!-- Testimonials Section -->
 <div class="testimonials">
     <h2>What Others Are Saying</h2>
     <div class="testimonial">
@@ -127,18 +124,17 @@
     </div>
 </div>
 
-<!-- Instructions Section -->
 <div class="instructions">
     <h2>⚡ Act Fast!</h2>
     <p>Limited spots available. Don’t miss out on this opportunity to earn $50 today!</p>
-    <a href="https://eradictrkr.com/pauldev" class="cta-button">Start Earning Now</a>
+    <a href="https://superfolder.net/pauldev" class="cta-button">Start Earning Now</a>
 </div>
 
-<!-- Footer -->
 <footer>
     <p>© 2024 FastCash Rewards. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
+
 
