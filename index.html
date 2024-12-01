@@ -2,81 +2,153 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-51HGPD2RKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51HGPD2RKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-51HGPD2RKP');
+    </script>
 
-  gtag('config', 'G-51HGPD2RKP');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Earn $50 instantly by completing simple tasks! Complete a survey or download an app to earn rewards. No payment info required. Start now!">
-    <meta name="keywords" content="earn $50, surveys, quick money, app download rewards, CPA offers, fast rewards">
+    <meta name="description" content="Earn $50 instantly by completing simple tasks! Complete a survey, download an app, or sign up to earn rewards. No payment info required. Start now!">
+    <meta name="keywords" content="earn $50, quick money, CPA offers, surveys, app downloads, online rewards">
     <meta name="author" content="Earn Rewards Team">
     <meta name="robots" content="index, follow">
-    <title>🎉 Earn $50 Fast - Limited Time Offer!</title>
+    <title>🎉 Earn $50 Instantly - Limited Time Offer!</title>
 
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="Earn $50 Instantly - Limited Time Offer">
-    <meta property="og:description" content="Join thousands who are earning $50 instantly by completing simple tasks like surveys or app downloads. Click to learn how!">
+    <meta property="og:description" content="Complete a simple task like a survey or app download to earn $50 instantly. Join thousands who are earning rewards right now!">
     <meta property="og:image" content="https://images.unsplash.com/photo-1584643703403-2895fa13ec0e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg1OXwwfDF8c2VhcmNofDIxfHxjdW0lMjBhJTIwYmFzZWQwb3Bwb3J0dW5pdHklMjBpbmZvJTIwcmVsYXRlZCUyMGVjb25vbWljJTIwbW9uZXklMkZ8ZW58MHx8fHwxNjg5MDAwNTI0&ixlib=rb-1.2.1&q=80&w=1080&h=720&fit=crop">
     <meta property="og:url" content="https://yourwebsite.com">
 
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; text-align: center; }
-        .hero { background-color: #ffffff; color: #333; padding: 40px 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
-        .hero h1 { font-size: 2.8rem; color: #28a745; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; color: #333; margin-bottom: 20px; }
-        .cta-button { background-color: #ff7f50; color: white; font-size: 1.5rem; font-weight: bold; padding: 15px 30px; border-radius: 5px; text-decoration: none; transition: background-color 0.3s; }
-        .cta-button:hover { background-color: #e06600; }
-        .proof, .testimonials, .footer { padding: 20px; }
-        .proof img, .testimonial img { width: 250px; margin: 10px auto; border-radius: 5px; }
-        .sticky-cta { position: fixed; bottom: 10px; right: 10px; background-color: #ff7f50; color: white; padding: 15px 25px; font-size: 1rem; font-weight: bold; border-radius: 30px; display: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
-        .sticky-cta.visible { display: block; }
-        .footer { background-color: #333; color: white; font-size: 0.9rem; }
-        .footer a { color: #ffc107; text-decoration: none; }
-        .footer a:hover { text-decoration: underline; }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        .hero {
+            background-color: white;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #ff7f50;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #e06600;
+        }
+        .steps {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .steps ol {
+            text-align: left;
+            font-size: 1.2rem;
+            padding: 0;
+            margin: 0;
+        }
+        .proof, .testimonials {
+            padding: 20px;
+        }
+        .proof img, .testimonials img {
+            width: 250px;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .sticky-cta {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ff7f50;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            display: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .sticky-cta.visible {
+            display: block;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+        .footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
 <!-- Hero Section -->
 <div class="hero">
-    <h1>🎉 Earn $50 Fast!</h1>
-    <p>Complete a quick task like a survey, sign-up, or download an app to earn $50 instantly! No payment info required.</p>
+    <h1>🎉 Earn $50 Instantly!</h1>
+    <p>Complete a simple task like a survey, app download, or sign-up to claim your reward. No payment info needed!</p>
     <a href="https://superfolder.net/pauldev" class="cta-button">Claim Your $50 Now</a>
 </div>
 
-<!-- How it Works -->
+<!-- How to Earn Section -->
 <div class="steps">
-    <h2>How to Earn $50</h2>
-    <ol style="text-align: left; margin: 0 auto; display: inline-block; font-size: 1.2rem; text-align: left; margin-top: 10px;">
-        <li>Click the button above to get started.</li>
-        <li>Complete a short survey, sign up for an offer, or download an app.</li>
-        <li>Earn $50 instantly after completing the task!</li>
+    <h2>How to Claim Your Reward</h2>
+    <ol>
+        <li>Click the button above to access the offer.</li>
+        <li>Complete a quick survey, download an app, or sign up for a service.</li>
+        <li>Receive $50 instantly after completing the task!</li>
     </ol>
 </div>
 
 <!-- Proof Section -->
 <div class="proof">
-    <h2>💸 Proof of Payment</h2>
+    <h2>💸 Payment Proof</h2>
     <img src="https://ai.flux-image.com/flux/f9b52303-0a7d-487b-a8c4-ab563446342f.jpg" alt="Payment Proof">
-    <p>Thousands have already received their $50! Don’t miss out!</p>
+    <p>Join thousands who are already earning rewards daily!</p>
 </div>
 
 <!-- Testimonials Section -->
 <div class="testimonials">
-    <h2>What People Are Saying</h2>
-    <div class="testimonial">
+    <h2>What Others Are Saying</h2>
+    <div>
         <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Sarah">
-        <p>"I couldn't believe how easy it was! Got my $50 in minutes after completing a survey!"</p>
+        <p>"I completed a survey and got $50 instantly. Amazing!"</p>
         <p>- Sarah, USA</p>
     </div>
-    <div class="testimonial">
+    <div>
         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John">
-        <p>"Simple tasks, fast payment. Best experience ever!"</p>
+        <p>"Quick and easy. Got my reward after downloading an app!"</p>
         <p>- John, UK</p>
     </div>
 </div>
