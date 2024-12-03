@@ -21,7 +21,7 @@
       font-family: Arial, sans-serif;
     }
     .hero-section {
-      background-color: #2d87f0; 
+      background-color: #2d87f0;
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -155,6 +155,22 @@
     .payment-methods img:hover {
       transform: scale(1.1);
     }
+    .withdraw-btn {
+      background-color: #dc3545;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 15px 40px;
+      border-radius: 50px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 20px;
+      cursor: not-allowed;
+    }
+    .withdraw-btn.active {
+      cursor: pointer;
+      background-color: #28a745;
+    }
   </style>
 </head>
 <body>
@@ -165,7 +181,7 @@
       <h1>💵 Win $500 Instantly!</h1>
       <p>Follow these simple steps and claim your reward in less than 5 minutes! Limited time offer!</p>
       <div class="counter">Offer expires in: <span id="countdown">03:00</span></div>
-      <a href="https://eradictrkr.com/pauldev" class="cta-btn" target="_blank" rel="noopener noreferrer">Get $500 Now</a>
+      <a href="https://eradictrkr.com/pauldev" class="cta-btn" target="_blank" rel="noopener noreferrer" id="offer-link">Get $500 Now</a>
     </div>
   </div>
 
@@ -210,50 +226,11 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="testimonial">
-          <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User 2">
-          <div class="name">Sarah Smith</div>
-          <div class="comment">"Completed a quick offer and earned $500 in no time!"</div>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="testimonial">
-          <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="User 3">
-          <div class="name">David Lee</div>
-          <div class="comment">"It was a fast process, and the money came right away!"</div>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="testimonial">
-          <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="User 4">
-          <div class="name">Emily Davis</div>
-          <div class="comment">"I was skeptical at first, but the reward came through just as promised!"</div>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
+
+  <!-- Withdraw Button (Initially Locked) -->
+  <a href="#" class="withdraw-btn" id="withdrawBtn" onclick="alert('Please complete the steps to unlock your $500!')" disabled>Withdraw $500</a>
 
   <!-- Sticky Button -->
   <a href="https://eradictrkr.com/pauldev" class="sticky-button" target="_blank" rel="noopener noreferrer">💵 Claim $500 Now</a>
@@ -279,10 +256,19 @@
         timeLeft--;
       }
     }, 1000);
+
+    // Simulate Completion of Offer (Unlock Withdraw Button)
+    document.getElementById("offer-link").addEventListener("click", function() {
+      setTimeout(function() {
+        document.getElementById("withdrawBtn").disabled = false;
+        document.getElementById("withdrawBtn").classList.add("active");
+      }, 3000); // Simulate completion after 3 seconds
+    });
   </script>
 
   <!-- Font Awesome for stars -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
+
 
