@@ -18,12 +18,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <style>
     body {
-      background-color: #101820; /* Dark theme for focus */
-      color: #ffffff;
+      background-color: #293A77; /* Color de fondo actualizado */
+      color: #3D3D3D; /* Color de todo el texto */
       font-family: 'Poppins', sans-serif;
     }
     .hero-section {
-      background-color: #1e293b;
+      background-color: #FFFFFF; /* Color de fondo de la sección */
       text-align: center;
       padding: 40px 20px;
       border-radius: 10px;
@@ -32,15 +32,15 @@
     .hero-section h1 {
       font-size: 2.5rem;
       margin-bottom: 15px;
-      color: #38bdf8;
+      color: #3F8EFA; /* Color del texto en la sección */
     }
     .hero-section p {
       font-size: 1.2rem;
       margin-bottom: 20px;
     }
     .cta-btn {
-      background-color: #38bdf8;
-      color: #101820;
+      background-color: #3F8EFA; /* Color de los botones */
+      color: #FFFFFF; /* Color del texto de los botones (blanco) */
       font-weight: bold;
       font-size: 1.2rem;
       padding: 15px 30px;
@@ -49,11 +49,11 @@
       transition: all 0.3s ease;
     }
     .cta-btn:hover {
-      background-color: #0284c7;
+      background-color: #2F76C1;
       color: #ffffff;
     }
     .instructions-section, .testimonial-section {
-      background-color: #1e293b;
+      background-color: #FFFFFF; /* Color de fondo de la sección */
       padding: 20px;
       border-radius: 10px;
       margin-top: 20px;
@@ -100,21 +100,15 @@
     }
     .logo {
       display: block;
-      width: 120px; /* Smaller logo size */
+      width: 200px; /* Ajustar tamaño del logo */
       margin: 20px auto;
-    }
-    .logo-text {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #38bdf8;
-      margin-top: -10px;
     }
     .sticky-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #38bdf8;
-      color: #101820;
+      background-color: #3F8EFA; /* Color de los botones */
+      color: #FFFFFF; /* Color del texto de los botones (blanco) */
       font-size: 1rem;
       padding: 10px 20px;
       border-radius: 50px;
@@ -123,17 +117,17 @@
       transition: background-color 0.3s ease;
     }
     .sticky-button:hover {
-      background-color: #0284c7;
+      background-color: #2F76C1;
     }
     footer {
-      background-color: #1e293b;
+      background-color: #293A77; /* Color de fondo del pie de página */
       color: #94a3b8;
       text-align: center;
       padding: 20px 0;
       margin-top: 30px;
     }
     footer a {
-      color: #38bdf8;
+      color: #3F8EFA; /* Color de los enlaces */
       text-decoration: none;
     }
     footer a:hover {
@@ -143,10 +137,9 @@
 </head>
 <body>
   <div class="container">
-    <!-- Logo and Text -->
+    <!-- Logo y Texto -->
     <div class="text-center">
-      <img src="https://static.surfe.be/notif-icon.png" alt="Surfe.be Logo" class="logo">
-      <div class="logo-text">Surfe.be</div>
+      <img src="https://static.surfe.be/images/LOGO-new-full-white.png" alt="logo" class="logo">
     </div>
     
     <!-- Hero Section -->
@@ -208,7 +201,7 @@
     document.getElementById("offer-link").addEventListener("click", function () {
       setTimeout(function () {
         const withdrawBtn = document.getElementById("withdrawBtn");
-        withdrawBtn.style.backgroundColor = "#38bdf8";
+        withdrawBtn.style.backgroundColor = "#3F8EFA";
         withdrawBtn.disabled = false;
         withdrawBtn.textContent = "Withdraw $100 Now!";
       }, 3000); // Simulate a 3-second process to unlock
