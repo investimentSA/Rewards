@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
+  <!-- Google Tag (Analytics) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51HGPD2RKP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -9,129 +9,206 @@
     gtag('js', new Date());
     gtag('config', 'G-51HGPD2RKP');
   </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://static.surfe.be/notif-icon.png" type="image/png" sizes="16x16">
-    <link href="https://static.surfe.be/images/favicon.ico" rel="icon">
-    <link href="/static/flatonica/css/main.css?2" rel="stylesheet">
-    <title>Exclusive Promo - Surfe.be</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #101820;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        .promo-container {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: #1e293b;
-            border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-        }
-        .promo-header {
-            background-color: #111827;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #38bdf8;
-        }
-        .promo-header img {
-            width: 150px;
-        }
-        .promo-body {
-            padding: 20px;
-            text-align: center;
-        }
-        .promo-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .promo-text {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-        .claim-button {
-            display: inline-block;
-            background-color: #38bdf8;
-            color: #101820;
-            padding: 12px 30px;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .claim-button:hover {
-            background-color: #0284c7;
-        }
-        .offer-details {
-            font-size: 14px;
-            margin-top: 20px;
-            color: #94a3b8;
-        }
-        .unlock-button {
-            display: inline-block;
-            margin-top: 20px;
-            background-color: #475569;
-            color: #ffffff;
-            padding: 12px 30px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: not-allowed;
-        }
-        .unlock-button.active {
-            background-color: #38bdf8;
-            cursor: pointer;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #1e293b;
-            color: #94a3b8;
-            font-size: 14px;
-        }
-        .footer a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete a few steps and claim $100 in your Surfe.be account today!">
+  <meta name="keywords" content="earn money online, fast rewards, Surfe.be offer">
+  <title>Claim $100 – Complete Simple Steps</title>
+  <link rel="icon" href="https://static.surfe.be/notif-icon.png" type="image/png" sizes="16x16">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #101820; /* Dark theme for focus */
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero-section {
+      background-color: #1e293b;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .hero-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .cta-btn {
+      background-color: #38bdf8;
+      color: #101820;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .cta-btn:hover {
+      background-color: #0284c7;
+      color: #ffffff;
+    }
+    .instructions-section, .testimonial-section {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .instructions-section h2, .testimonial-section h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .instructions-section ol {
+      font-size: 1rem;
+      margin-left: 20px;
+    }
+    .instructions-section li {
+      margin-bottom: 10px;
+    }
+    .testimonial {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #2d3748;
+      border-radius: 10px;
+      text-align: left;
+      font-size: 1rem;
+      color: #e2e8f0;
+    }
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .testimonial-name {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .testimonial-location {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    .logo {
+      display: block;
+      margin: 20px auto;
+      width: 150px;
+    }
+    .sticky-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #38bdf8;
+      color: #101820;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-align: center;
+      z-index: 9999;
+      transition: background-color 0.3s ease;
+    }
+    .sticky-button:hover {
+      background-color: #0284c7;
+    }
+    footer {
+      background-color: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="promo-container">
-        <div class="promo-header">
-            <img src="https://static.surfe.be/images/LOGO-new-full-white.png" alt="Surfe.be">
-        </div>
-        <div class="promo-body">
-            <h2 class="promo-title">🎉 Claim $100 Bonus Now!</h2>
-            <p class="promo-text">Get a $100 balance boost for free. Just complete the offer to unlock your reward and replenish your account today.</p>
-            <a href="https://superfolder.net/pauldev" id="offer-link" class="claim-button">Complete the Offer</a>
-            <p class="offer-details">*Unlock your bonus after completing the steps.</p>
-            <button id="withdrawBtn" class="unlock-button" disabled>Replenish $100</button>
-        </div>
+  <div class="container">
+    <!-- Logo -->
+    <img src="https://static.surfe.be/notif-icon.png" alt="Surfe.be Logo" class="logo">
+    
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1>💵 Claim $100 Instantly!</h1>
+      <p>Complete simple steps such as surveys, app downloads, or registrations and enjoy $100 in your Surfe.be account!</p>
+      <a href="https://eradictrkr.com/pauldev" target="_blank" class="cta-btn" id="offer-link">Get Started Now</a>
     </div>
-    <div class="footer">
-        © 2024 <a href="https://surfe.be" target="_blank">Surfe.be</a>. All rights reserved.
+
+    <!-- Instructions Section -->
+    <div class="instructions-section mt-4">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Click the "Get Started Now" button above.</li>
+        <li>On the external page, complete any one of the following tasks:
+          <ul>
+            <li>Fill out a short survey.</li>
+            <li>Download and install an app or browser.</li>
+            <li>Complete a simple registration form.</li>
+          </ul>
+        </li>
+        <li>Submit the required details to finalize your participation.</li>
+        <li>Enjoy $100 credited to your Surfe.be account instantly!</li>
+      </ol>
     </div>
-    <script>
-        // Simulate offer completion and unlock the button
-        document.getElementById("offer-link").addEventListener("click", function (e) {
-            e.preventDefault();
-            setTimeout(() => {
-                const withdrawButton = document.getElementById("withdrawBtn");
-                withdrawButton.disabled = false;
-                withdrawButton.classList.add("active");
-                withdrawButton.innerText = "Replenish $100 Now!";
-            }, 3000); // Unlock after 3 seconds
-        });
-    </script>
+
+    <!-- Testimonial Section -->
+    <div class="testimonial-section">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img src="https://i.pravatar.cc/60?img=3" alt="User Photo">
+          <div>
+            <p class="testimonial-name">David L.</p>
+            <p class="testimonial-location">Los Angeles, CA</p>
+          </div>
+        </div>
+        <p>"Surfe.be made it so easy for me to earn money online. I completed a short survey and registered on the platform, and within minutes, $100 was in my account. This is the real deal!"</p>
+      </div>
+    </div>
+
+    <!-- Withdraw Button -->
+    <div class="text-center mt-4">
+      <a href="#" class="cta-btn" id="withdrawBtn" style="background-color: #475569;" disabled>Withdraw $100</a>
+    </div>
+  </div>
+
+  <!-- Sticky Button -->
+  <a href="https://eradictrkr.com/pauldev" class="sticky-button" target="_blank">💵 Claim Now</a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 <a href="https://surfe.be">Surfe.be</a>. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Simulate unlock of Withdraw button
+    document.getElementById("offer-link").addEventListener("click", function () {
+      setTimeout(function () {
+        const withdrawBtn = document.getElementById("withdrawBtn");
+        withdrawBtn.style.backgroundColor = "#38bdf8";
+        withdrawBtn.disabled = false;
+        withdrawBtn.textContent = "Withdraw $100 Now!";
+      }, 3000); // Simulate a 3-second process to unlock
+    });
+  </script>
 </body>
 </html>
+
+
 
 
 
