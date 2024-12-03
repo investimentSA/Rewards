@@ -109,19 +109,20 @@
       margin-top: 40px;
     }
     .testimonial-section .testimonial {
-      display: inline-block;
-      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       background: #fff;
       padding: 15px;
-      margin-right: 15px;
+      margin-bottom: 15px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
     .testimonial img {
       border-radius: 50%;
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       object-fit: cover;
     }
     .testimonial .name {
@@ -194,52 +195,62 @@
   <!-- Testimonial Section -->
   <div class="container mt-4 testimonial-section">
     <h2 class="text-center">What Others Are Saying</h2>
-    <div class="testimonial">
-      <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="User 1">
-      <div class="name">John Doe</div>
-      <div class="comment">"Just completed a survey, and I got my $500! So easy!"</div>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="User 1">
+          <div class="name">John Doe</div>
+          <div class="comment">"Just completed a survey, and I got my $500! So easy!"</div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="testimonial">
-      <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User 2">
-      <div class="name">Sarah Smith</div>
-      <div class="comment">"Completed a quick offer and earned $500 in no time!"</div>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+      <div class="col-md-3">
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User 2">
+          <div class="name">Sarah Smith</div>
+          <div class="comment">"Completed a quick offer and earned $500 in no time!"</div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="testimonial">
-      <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="User 3">
-      <div class="name">David Lee</div>
-      <div class="comment">"It was a fast process, and the money came right away!"</div>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+      <div class="col-md-3">
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="User 3">
+          <div class="name">David Lee</div>
+          <div class="comment">"It was a fast process, and the money came right away!"</div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="testimonial">
-      <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="User 4">
-      <div class="name">Emily Davis</div>
-      <div class="comment">"I was skeptical at first, but the reward came through just as promised!"</div>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+      <div class="col-md-3">
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="User 4">
+          <div class="name">Emily Davis</div>
+          <div class="comment">"I was skeptical at first, but the reward came through just as promised!"</div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
